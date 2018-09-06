@@ -166,6 +166,9 @@ ggplot(sleep_summary, aes(x = vore, y = avg)) +
   geom_bar(stat = 'identity')
 
 ggplot(sleep, aes(x = group, fill = positive)) +
+  geom_col()
+
+ggplot(sleep, aes(x = group, fill = positive)) +
   geom_bar()
 
 ggplot(sleep, aes(x = group, fill = positive)) +
